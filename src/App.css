@@ -1,8 +1,7 @@
 .image-container {
   width: 98%;
-  margin: auto;
+  margin: 30px auto;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .gallery-photo {
@@ -20,15 +19,3 @@
   vertical-align: middle;
   width: 100%;
 }
-
-/* .image-container div {
-  list-style: none;
-}
-
-.gallery-photo div:nth-child(even) {
-  transform: rotate(3deg);
-}
-
-.gallery-photo div:nth-child(odd) {
-  transform: rotate(-3deg);
-} */
