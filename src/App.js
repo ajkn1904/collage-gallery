@@ -1,6 +1,10 @@
 import './App.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 function App() {
+
+
 
   const imgUrl = [
     {
@@ -117,21 +121,23 @@ function App() {
 
       {
         imgUrl.map(imgSection =>
-          
-          
+
+
           <div className='img-column' key={imgSection.sec_id}>
 
             {
               imgSection.sec.map(galleryImg =>
-
-                <img src={galleryImg.url} alt="" key={galleryImg.id} className='gallery-photo' />
-
+                <PhotoProvider>
+                  <PhotoView src={galleryImg.url}>
+                    <img src={galleryImg.url} alt="" key={galleryImg.id} className='gallery-img' />
+                  </PhotoView>
+                </PhotoProvider>
               )
             }
 
           </div>
 
-          
+
         )
       }
 
