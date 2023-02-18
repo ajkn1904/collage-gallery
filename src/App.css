@@ -1,0 +1,34 @@
+.image-container {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  max-width: 32%;
+  margin: 0 auto;
+}
+
+.column img {
+  margin: 2% 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* .image-container div {
+  list-style: none;
+}
+
+.gallery-photo div:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.gallery-photo div:nth-child(odd) {
+  transform: rotate(-3deg);
+} */
