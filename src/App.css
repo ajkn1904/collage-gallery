@@ -1,21 +1,43 @@
 .image-container {
-  width: 98%;
+  width: 95%;
   margin: 30px auto;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.img-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 25%;
+  max-width: 32%;
+  margin: 0 8px;
 }
 
 .gallery-photo {
   width: 100%;
   height: auto;
-}
-
-.column {
-  max-width: 32%;
-  margin: 0 auto;
-}
-
-.column img {
   margin: 2% 0;
   vertical-align: middle;
-  width: 100%;
+}
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+  .img-column {
+    flex: 34%;
+    max-width: 48%;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  .img-column {
+    flex: 100%;
+    max-width: 96%;
+  }
+
 }
