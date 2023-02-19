@@ -1,22 +1,23 @@
 .image-container {
   width: 95%;
   margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: block;
 }
 
-.img-column {
+/* .img-box {
   display: flex;
   flex-wrap: wrap;
   flex: 25%;
   max-width: 32%;
   margin: 0 8px;
-}
+} */
 
 .gallery-img {
   width: 100%;
   height: auto;
-  margin: 2% 0;
+  max-height: 700px;
   vertical-align: middle;
 }
 
@@ -26,9 +27,9 @@
 
 
 
-
+/* 
 @media screen and (min-width:481px) and (max-width:768px) {
-  .img-column {
+  .img-box {
     flex: 34%;
     max-width: 48%;
     margin: 0 auto;
@@ -38,9 +39,9 @@
 
 
 @media screen and (min-width:320px) and (max-width:480px) {
-  .img-column {
+  .img-box {
     flex: 100%;
     max-width: 96%;
   }
 
-}
+} */
